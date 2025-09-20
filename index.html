@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <title>Easley HVAC</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon2.png">    
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>    
+    <div class="banner">
+      <img id="logo" src="assets/hvaclogo.jpg" alt="Easley HVAC Logo">
+    </div>
+    <div class="call-bar">
+      <a href="tel:+12676739358">Call Us: (267) 673-9358</a>
+    </div>
+    <div class="intro">
+      <h1>Thank you for choosing Easley HVAC</h1>
+      <p>Over 15 years in residential and light commercial Heating and Air Conditioning experience.</p> 
+      <p>Providing quality, honest, trustworthy care to your mechanical systems is what I know best..</p> 
+      <p>Repairs, Maintenance, Installations, Innovative Solutions: Easley HVAC.</p>
+    </div>
+    <div class="gallery">
+      <div class="service-card">
+      <h2 class="list-header">Professional Services</h2>
+      <ul>
+        <li>Hot Air Heaters</li>       
+        <li>Boilers</li>       
+        <li>Air Conditioning & Heat Pumps</li>      
+        <li>Regular Maintenance</li>      
+        <li>Repairs</li>     
+        <li>Installations</li>
+      </ul>
+      </div> <!--Service List card-->
+      <div class="scroll-card">
+        <img src="assets/gallery/after1.jpg" alt="After Photo 1">
+        <img src="assets/gallery/after2.jpg" alt="After Photo 2">
+        <img src="assets/gallery/before1.jpg" alt="Before Photo 1">
+        <img src="assets/gallery/before2.jpg" alt="Before Photo 2">
+        <img src="assets/gallery/after3.jpg" alt="After Photo 3">
+        <img src="assets/gallery/after4.jpg" alt="After Photo 4">
+      </div> <!--Scroll Card-->
+      <div class="area-card">
+        <h2 class="list-header">Service Areas</h2>
+        <ul>
+          <li>Blue Bell, PA</li>          
+          <li>Bucks County, PA</li>
+          <li>Delaware County, PA</li>
+          <li>Hatboro, PA</li>
+          <li>Montgomery County, PA</li>
+          <li>New Hope, PA</li>
+          <li>Solebury, PA</li>
+          <li>Warminster, PA</li>
+          <li>Wayne, PA</li>
+          <li>Willow Grove, PA</li>          
+        </ul>
+      </div> <!--Area List card-->
+    </div><!--Gallery container-->
+    <div class="contact">
+      <form>
+       <fieldset>
+      <legend>Contact Us</legend>
+      <p><input type="text" placeholder="Name" required> <input id="form-phone" type="tel" placeholder="Phone Number" minlength="10" maxlength="10"required></p>
+      <p><select id="contact" name="contact" aria-placeholder="Select a Service Category" required>
+         <option value="" disabled selected>Select a Service Category</option>
+         <option value="hot-air">Hot Air Heaters</option>
+         <option value="boilers">Boilers</option>
+         <option value="ac-heatpumps">Air Conditioning & Heat Pumps</option>
+         <option value="repairs">Repairs</option>
+         <option value="maintenance">Maintenance</option>
+         <option value="installations">Installations</option>
+       </select></p>
+       <div class="input-row">
+         <p><textarea id="message" name="message" rows="4" cols="50" maxlength="200" placeholder="(Optional) Please briefly describe the problem"></textarea></p>
+         <p class="subText"><span class="charCount" id="charCount"> 200</span> characters remaining</p>
+     </div>
+       <script>
+         const textarea = document.getElementById('message');
+         const charCount = document.getElementById('charCount');
+         const maxLength = textarea.maxLength;
+
+         textarea.addEventListener('input', function() {
+           charCount.textContent = maxLength - textarea.value.length;
+         });
+       </script>
+       <p><input class="submit" type="submit" value="Submit"></p>
+       </fieldset>
+     </form>
+
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
